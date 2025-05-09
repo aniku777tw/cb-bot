@@ -27,7 +27,7 @@ def fetch_convertbond_info(code: str) -> list:
     options.add_argument('--headless')
     options.add_argument('--no-sandbox')
     options.add_argument('--disable-dev-shm-usage')
-    options.binary_location = "/usr/bin/chromium"
+    options.binary_location = "/usr/bin/google-chrome"
     
     # 初始化 Chrome WebDriver
     driver = webdriver.Chrome(options=options)
